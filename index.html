@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tech Biz Limited || YOUR DIGITAL PARTNER</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="images/favicon.png" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- WOW ANIMATION-->
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+  <section class="navigation" style="background-color: #fff;">
+    <div class="logos">
+      <div class="logo">
+        <img src="images/logo2.png" alt="">
+      </div>
+
+    </div>
+    <div class="icons">
+      <nav class="navbar">
+        <a class="line" href="#blogg">OUR BLOG</a>
+        <a class="line line1" href="#jr">OUR JOURNEY</a>
+        <a class="active" href="#contact">GET IN TOUCH</a>
+      </nav>
+      <i class="fas fa-bars" id="menu-bars"></i>
+    </div>
+  </section>
+  <script>
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('.navbar');
+    let headerr = document.querySelector('.navigation');
+    let logo1 = document.querySelector('.logo img'); // Target the img element within .logo
+    let logo2 = document.querySelector('.logo img'); // Target the img element within .logo2
+    let logoImages = ['used-images/parallax-images/logo.png', 'used-images/parallax-images/logo.png']; // Array of logo images
+    let currentLogoIndex = 0; // Index of the current logo image
+
+    menu.onclick = () => {
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('active');
+    };
+
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('.navigation .navbar a');
+
+    window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('active');
+
+      sections.forEach(section => {
+        let top = window.scrollY;
+        let height = section.offsetHeight;
+        let offset = section.offsetTop - 150;
+        let id = section.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+          navLinks.forEach(links => {
+            links.classList.remove('active');
+            document.querySelector('.navigation .navbar a[href*=' + id + ']').classList.add('active');
+          });
+        }
+      });
+
+      // Change logo image and header background color
+      if (window.scrollY > 550) {
+        headerr.style.backgroundColor = '#fff';
+        //    header.style.margin = '0px';
+        //   logo1.style.opacity = 0;
+        // logo2.style.opacity = 1;
+      } else {
+        headerr.style.backgroundColor = 'transparent';
+        //  logo1.style.opacity = 1;
+        // logo2.style.opacity = 0;
+        //  header.style.marginTop = '20px';
+      }
+    };
+
+    // Change the logo image when clicked
+    logo1.addEventListener('click', () => {
+      currentLogoIndex = (currentLogoIndex + 1) % logoImages.length;
+      logo1.src = logoImages[currentLogoIndex];
+    });
+
+    // Initial setup to hide one of the logos
+    logo2.style.opacity = 0;
+    logo1.style.opacity = 1;
+
+  </script>
+
+
+ <!-------Hero Section-------->
+ <!-------Hero Section-------->
+ <section class="hero-section">
+  <img id="layer5" src="./images/hero-section/Layer5.png" alt="">
+  <img id="layer4" src="./images/hero-section/Layer4.webp" alt="">
+  <img id="layer3" src="./images/hero-section/Layer3.png" alt="">
+  <img id="layer2" src="./images/hero-section/Layer2.webp" alt="">
+    <img id="layer1.1" src="./images/hero-section/Layer1.1.webp" alt="">
+  <img id="layer1" src="./images/hero-section/Layer1.webp" alt="">
+  <img id="layer6" src="./images/hero-section/Layer6.webp" alt="">
+            <img id="layer7" src="./images/hero-section/Layer7.webp" alt="">
+            <img id="layer8" src="./images/hero-section/Layer8.webp" alt="">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="hero-heading">Crafting Your Next<span class="h1-code"> Code</span><br/>in <span class="h1-silicon">Silicon </span> Savannah</h1>
+                  <p class="hero-subheading">Elevate your digital project's success with our team of highly skilled professionals</p>
+                </div>
+              </div>
+            </div>
+
+</section>
+
+
+  <!--ABOUT US-->
+  <!--ABOUT US-->
+  <div class="about-us" style=" margin-top:  100px;">
+
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <div class="section-title abt-title">
+          <h1 class="wow fadeInRight" style="margin: 0;">ABOUT US</h1>
+          <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #0DB4D7; width: 100px;">
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row first-row" style="width: 90%; margin: auto;">
+      <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
+
+        <div class="container-fluid bus" style="padding: 40px;"> </div>
+      </div>
+      <div class="col-md-6 wow fadeInRight firr">
+        <div class="section-title abt-us-content">
+          <h1>Your Digital Partner</h1>
+          <p >In an ever-evolving business landscape, digital
+            transformation for any business is vital to remain competitive, agile, and relevant to offer the best
+            customer experience. This journey needs to be smooth and affordable and we, your digital partner, understand
+            this importance as after all we are in the Silicon Savannah!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row second-row" style="width: 89%; margin: auto; margin-top: 20px;">
+      <div class="col-md-6 wow fadeInLeft">
+        <div class="section-title" style="width: 87%; margin: auto;">
+          <h1 style="">Our
+            Digital Journey - (So Far!)</h1>
+          <p style="">Since our inception in 2005 as
+            Techbiz, we've empowered businesses to grow and thrive through cutting-edge solutions. Now, in the digital
+            age, we've evolved into your dedicated digital partner. This shift allows us to provide tailored solutions
+            for your digital assets, ensuring impactful results without straining budgets. Choose us to lead the way for
+            your digital assets.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-timeline wow fadeInRight">
+
+        <svg id="svg" class="container-fluid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1200">
+          <path class="line01 line" d="M 10 200  600 200"></path>
+          <path class="line02 line" d="M 10 400  600 400"></path>
+          <path class="line03 line" d="M 10 600  600 600"></path>
+          <path class="line04 line" d="M 10 800  600 800"></path>
+          <path class="line05 line" d="M 10 1000  600 1000"></path>
+
+          <text class="text01" x="30" y="190"></text>
+          <text class="text02" x="30" y="390"></text>
+          <text class="text03" x="30" y="590"></text>
+          <text class="text04" x="30" y="790"></text>
+          <text class="text05" x="30" y="990"></text>
+
+          <path class="theLine" d="M -5,0
+                Q 450 230 300 450 
+                T 130 750
+                Q 100 850 300 1000
+                T 150 1200" fill="none" stroke="#0DB4D7" stroke-width="10px" />
+
+
+          <image class="ball ball01" href="images/icon-journey.png" x="30" y="100" width="400px" height="400px"></image>
+          <!--  <circle class="ball ball01" r="20" cx="50" cy="100"></circle>  -->
+          <circle class="ball ball02" r="20" cx="278" cy="201"></circle>
+          <circle class="ball ball03" r="20" cx="327" cy="401"></circle>
+
+          <circle class="ball ball04" r="20" cx="203" cy="601"></circle>
+
+        </svg>
+
+
+
+        <div id="lottie-animation"></div>
+       <!-- <div id="lottie-animation2"></div>  --> 
+
+      </div>
+
+    </div>
+   <!-- <div class="row" style="width: 89%; margin: auto; margin-top: 20px;">
+      <video width="200" height="150" controls style="max-width: 200px; height: auto;">
+          <source src="images/sun.webm" type="video/webm">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+  -->
+
+ 
+    
+  </div>
+
+
+
+  </div>
+
+  <!----------------------------------NEW DIGITAL SERVICES----------------------------------->
+  <div class="digital-new" style="background-color: #fff; margin-top: 20px;">
+    <div class="row" style="width: 87%; margin: auto;">
+      <div class="col1 digital-left-img col-md-6">
+        <img src="images/digitt2.webp" alt="" class="dg-img">
+        <div class="ui-tip-card shadow">
+           <div class="row">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <h2 >UI TIPS</h2>
+              </div>
+              <div class="d-flex align-items-center justify-content-end">
+               <!-- <img src="images/lightbulb.png" alt="" class="light-bulb">  -->
+               <div id="bulb"></div>
+              </div>
+            </div>
+           
+            <div class="d-flex align-items-center check-mark">
+              <img src="images/check-mark.png" alt="" >
+              <p> Empathy-Driven Design</p>
+            </div>
+          
+            <div class="d-flex align-items-center check-mark">
+              <img src="images/check-mark.png" alt="" >
+              <p>  Clarity and Simplicity</p>
+            </div>
+            <div class="d-flex align-items-center check-mark">
+              <img src="images/check-mark.png" alt="" >
+              <p> Iterative Design Process</p>
+            </div>
+          
+           
+           </div>
+        </div>
+      </div>
+      <div class="col2 col-md-6">
+        <div class="section-title" style=" display: flex; align-items: center;">
+          <h1 class="wow fadeInRight" style="margin: 0;">DIGITAL ENGENEERING</h1>
+          <hr style="margin: 0 10px; border: 1px solid #0DB4D7; color: #000; width: 100px;">
+        </div>
+        <div class="section-title" >
+
+          <h3 style="text-align: left;">Effective Digital
+            SEO Marketing Solutions</h3>
+          <p style="color: #555555;">Abilities forfeited situation extremely my to he resembled. Old had conviction
+            discretion understood put principles you. Match means keeps round.</p>
+        </div>
+        <div class="drow wow fadeInRight" data-wow-delay="0.2s">
+          <div class="digital-image">
+            <img src="images/digital-services/mobile.png" alt="">
+          </div>
+          <div class="digital-text">
+            <h2>MOBILE APP DEVELOPMENT</h2>
+            <p>Mobile apps, just a tap away, connect your business and customers. We emphasize on delivering swift and
+              stable apps with a sleek interface be it iOS, Android or hybrid platforms.
+
+          </div>
+        </div>
+        <div class="drow wow fadeInRight" data-wow-delay="0.4s">
+          <div class="digital-image">
+            <img src="images/digital-services/web.png" alt="">
+          </div>
+          <div class="digital-text">
+            <h2>WEB APP DEVELOPMENT</h2>
+            <p style=" color: #000;">Modern web apps revolutionize business operations. Whether for your corporate site, Intranet, or
+              cloud-based setup, our solutions enhance client service. Our team excels in frontend and backend
+              technologies, crafting designs with high-quality code.</p>
+
+          </div>
+        </div>
+        <div class="drow wow fadeInRight" data-wow-delay="0.6s">
+          <div class="digital-image">
+            <img src="images/digital-services/ui.png" alt="">
+          </div>
+          <div class="digital-text">
+            <h2>UI / UX</h2>
+            <p style=" color: #000;">From seamless navigation to captivating visual elements, our UI/UX team creates designs that resonate
+              with your users ensuring intuitive, enjoyable and memorable experience which increases business success.
+            </p>
+
+          </div>
+        </div>
+        <div class="drow wow fadeInRight" data-wow-delay="0.8s">
+          <div class="digital-image">
+            <img src="images/digital-services/product-devt.png" alt="">
+          </div>
+          <div class="digital-text">
+            <h2>QUALITY ASSUARANCE AND SECURITY</h2>
+            <p style=" color: #000;">Our Quality Assurance (QA) team ensures that your app adheres to the latest web standards and security
+              protocols, in addition to increased usability ,fast web-page loading time and web-designed interfaces.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-------------------------END OF DIGITAL SERVICES------------------->
+  <!-- DIGITAL SERVICES
+  <div class="digital-services" style=" display: none;">
+    <div class="section-title">
+      <h1 style="color: #fff;">CLOUD AND ARTIFICIAL INTELLIGENCE</h1>
+    </div>
+
+    <div class="digital-container" style="margin-top: 50px;">
+
+      <div class="digital-card-main">
+        <div class="row">
+          <div class="container container1">SEO</div>
+          <div class="container container2">CONTENT MARKETING</div>
+        </div>
+        <div class="digital-card">
+          <img src="images/digital/mobile development.jpg" alt="Mobile Development">
+          <div class="intro">
+            <h1>CLOUD </h1>
+            <p>The <span>Mobile Development</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="digital-card-main">
+        <div class="row">
+          <div class="container container1">SEO</div>
+          <div class="container container2">CONTENT MARKETING</div>
+        </div>
+
+        <div class="digital-card">
+          <img src="images/digital/web development.jpg" alt="Web Development">
+          <div class="intro">
+            <h1>ARTIFICIAL INTELLIGENCE</h1>
+            <p>The <span>Mobile Development</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="digital-container" style="margin-top: 50px; margin-bottom: 100px;">
+      <div class="digital-card-main">
+        <div class="row">
+          <div class="container container1">SEO</div>
+          <div class="container container2">CONTENT MARKETING</div>
+        </div>
+        <div class="digital-card">
+          <img src="images/digital/ui-ux.jpg " alt="Mobile Development">
+          <div class="intro">
+            <h1>UI / UX </h1>
+            <p>The <span>UI / UX </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="digital-card-main">
+        <div class="row">
+          <div class="container container1">SEO</div>
+          <div class="container container2">CONTENT MARKETING</div>
+        </div>
+        <div class="digital-card">
+          <img src="images/digital/digital-marketing.jpg" alt="Web Development">
+          <div class="intro">
+            <h1>Quality Assurance</h1>
+            <p>The <span>DIGITAL MARKETING</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+-->
+  <!-- CLOUD AND AI 
+   
+
+   <div class="cloud-video-wrapper">
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="https://vitalrecordscontrol.com/wp-content/uploads/2021/09/Hero-Small-Green.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <div class="cloud-vid">
+    
+    </div>
+  </div>
+-->
+
+<section class="cloud-bg">
+  <div class="cloud-main panel" style="margin-top: 70px;">
+   
+    <div class="section-title wow fadeInUp">
+      <!--   <h1 >CLOUD AND ARTIFICIAL&nbsp;&nbsp; <span class="underlined">INTELLIGENCE</span></h1>   -->
+      <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
+        <h1 class="wow fadeInRight" style="margin: 0;">CLOUD AND ARTIFICIAL INTELLIGENCE</h1>
+        <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #000; width: 100px;">
+      </div>
+      <div class="section-title">
+
+        <h3>Cloud & AI: Innovate Digitally, Soar Effectively</h3>
+      </div>
+      <p style="color: #000; width: 75%; margin: auto; margin-top: 30px; margin-bottom: 20px; text-align: center;">At
+        Techbiz Limited, we specialize in delivering cutting-edge digital services tailored
+        to your unique needs. Our expert team is dedicated to enhancing your online presence, driving organic
+        traffic, and boosting conversions.</p>
+    </div>
+
+
+    <div class="row mb-5 cloud-card-row">
+      
+    <div class="col-md-6">
+      <div class="row">
+
+     
+        <div class="col-12 col-sm-12 col-md-6 m-auto wow fadeInLeft">
+
+          <div class="card shadow card-new">
+            <div id="cloud-banner1"></div>
+            <div class="card-body">
+              <h3 class="text-center">CLOUD</h3>
+             
+             <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments beautiful.</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="col-12 col-sm-12 col-md-6 m-auto wow fadeInUp">
+  
+          <div class="card shadow card-new">
+          <!--  <img src="images/digital/web.svg" alt="" class="card-img-top-new">  -->
+          <div id="cloud-banner1-1"></div>
+            <div class="card-body">
+              <h3 class="text-center">LOREM</h3>
+             
+              <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments beautiful.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+     
+
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+       
+        <div class="col-12 col-sm-12 col-md-6  m-auto wow fadeInUp">
+
+          <div class="card shadow card-new">
+          <!--  <img src="images/digital/dm.svg" alt="" class="card-img-top-new"> -->
+          <div id="cloud-banner2"></div>
+            <div class="card-body">
+              <h3 class="text-center">ARTIFICIAL INTELLIGENCE</h3>
+            
+            <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments beautiful.</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="col-12 col-sm-12  col-md-6 m-auto wow fadeInRight">
+  
+          <div class="card shadow card-new">
+           <!-- <img src="images/digital/app.svg" alt="" class="card-img-top-new">  -->
+           <div id="cloud-banner2-2"></div>
+            <div class="card-body">
+              <h3 class="text-center">LOREM IPSUM</h3>
+           
+              <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments beautiful.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    
+    </div>
+
+     
+     
+
+    </div>
+
+
+    <div class="cloud-banner wow fadeIn" data-wow-delay="0.5s" style="width: 90%; margin: auto;">
+
+      <div class="clouds">
+        <img src="images/cloud/cloud1.webp" alt="" style="--i:1;">
+        <img src="images/cloud/cloud2.webp" alt="" style="--i:2;">
+        <img src="images/cloud/cloud3.webp" alt="" style="--i:3;">
+        <img src="images/cloud/cloud4.webp" alt="" style="--i:4;">
+        <img src="images/cloud/cloud5.png" alt="" style="--i:5;">
+      </div>
+    </div>
+    <!-- <div class="digital-container" style="margin-top: 50px; display: none;">
+
+     <div class="digital-card-main">
+       <div class="row">
+         <div class="container container1">SEO</div>
+         <div class="container container2">CONTENT MARKETING</div>
+       </div>
+       <div class="digital-card">
+         <img src="images/digital/mobile development.jpg" alt="Mobile Development">
+         <div class="intro">
+           <h1>CLOUD </h1>
+           <p>The <span>Mobile Development</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+       </div>
+     </div>
+     <div class="digital-card-main">
+       <div class="row">
+         <div class="container container1">SEO</div>
+         <div class="container container2">CONTENT MARKETING</div>
+       </div>
+
+       <div class="digital-card">
+         <img src="images/digital/web development.jpg" alt="Web Development">
+         <div class="intro">
+           <h1>ARTIFICIAL INTELLIGENCE</h1>
+           <p>The <span>Mobile Development</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   -->
+    <!-- <div class="row digital-cards-row" style=" ">
+     <div class="col-md-6">
+       <div class="cardd redd gradient-border wow fadeInLeft">
+        
+      <img src="images/AI//ai.svg" alt="" class ="img-fluid">
+       
+       </div>
+       <div class="card greenn wow fadeInUp">
+         <h2>CLOUD </h2>
+         <p>Optimized with code-splitting, tree-shaking, optimized cold-start, link prefetching, payload extraction, just to name a few. Fast by default so you can focus on building.</p>
+       </div>
+     </div>
+     <div class="col-md-6">
+       <div class="cardd redd gradient-border wow fadeInLeft">
+       
+         <img src="images/AI/ai2.svg" alt=""  class ="img-fluid">
+       </div>
+       <div class="card greenn wow fadeInUp">
+         <h2>ARTIFICIAL INTELLIGENCE</h2>
+         <p>Optimized with code-splitting, tree-shaking, optimized cold-start, link prefetching, payload extraction, just to name a few. Fast by default so you can focus on building.</p>
+      
+       </div>
+     </div>
+   </div>
+  -->
+
+
+
+  </div>
+</section>
+ 
+ 
+  <div class="resource-main panel">
+    <div class="custom-shape-divider-top-1696329805">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+  </div>
+
+    <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
+      <h1 class="wow fadeInUp" style="margin: 0;">RESOURCE AUGMENTATION DEV OPS</h1>
+      <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #fff; width: 100px;">
+    </div>
+    <div class="section-title section-title2" style="margin-top: 0px;">
+      <h3>Effective Digital
+        SEO Marketing Solutions</h3>
+      <p class="wow fadeInUp" data-wow-delay="0.5s">At Techbiz Limited, we specialize in delivering cutting-edge digital
+        services tailored
+        to your unique needs. Our expert team is dedicated to enhancing your online presence, driving organic
+        traffic, and boosting conversions.</p>
+    </div>
+    <div class="row resource-row" style="width: 87%; margin: auto;">
+      <div class="col-md-5">
+        <h2 class="wow fadeInUp" data-wow-delay="0.5s">RESOURCE AUGMENTATION </h2>
+        <p class="wow fadeInUp" data-wow-delay="0.5s">At Techbiz Limited, we specialize in delivering cutting-edge
+          digital services tailored
+          to your unique needs. Our expert team is dedicated to enhancing your online presence, driving organic
+          traffic, and boosting conversions.</p>
+        <div class="container-card bg-green-box wow fadeInLeft" data-wow-delay="0.5s">
+          <div class="svg-container">
+            <svg width="60" height="60" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4547)"
+                fill-opacity="0.15" stroke="url(#paint1_radial_1366_4547)" stroke-width="2"></rect>
+              <path
+                d="M33.2182 61.4C33.2182 75.425 37.2682 86.75 51.5932 86.75C65.9182 86.75 69.8182 75.425 69.8182 61.4C69.8182 47.225 65.9182 35.9 51.5932 35.9C37.2682 35.9 33.2182 47.225 33.2182 61.4ZM43.7182 61.4C43.7182 53.075 45.5932 46.1 51.5932 46.1C57.5182 46.1 59.3182 53.075 59.3182 61.4C59.3182 69.65 57.5182 76.55 51.5932 76.55C45.5932 76.55 43.7182 69.65 43.7182 61.4Z"
+                fill="#54E8A9"></path>
+              <path
+                d="M87.7143 36.35L78.0543 56H80.1243L89.7843 36.35H87.7143ZM74.6943 40.16C74.6943 42.44 76.4043 44.15 78.6843 44.15C80.9343 44.15 82.7043 42.44 82.7043 40.16C82.7043 37.91 80.9343 36.14 78.6843 36.14C76.4043 36.14 74.6943 37.91 74.6943 40.16ZM77.1243 40.16C77.1243 39.29 77.7543 38.57 78.6843 38.57C79.5543 38.57 80.2743 39.29 80.2743 40.16C80.2743 41.09 79.5543 41.72 78.6843 41.72C77.7543 41.72 77.1243 41.09 77.1243 40.16ZM85.3143 52.31C85.3143 54.59 87.0243 56.3 89.3043 56.3C91.5543 56.3 93.3243 54.59 93.3243 52.31C93.3243 50.06 91.5543 48.29 89.3043 48.29C87.0243 48.29 85.3143 50.06 85.3143 52.31ZM87.7443 52.31C87.7443 51.44 88.3743 50.72 89.3043 50.72C90.1743 50.72 90.8943 51.44 90.8943 52.31C90.8943 53.24 90.1743 53.87 89.3043 53.87C88.3743 53.87 87.7443 53.24 87.7443 52.31Z"
+                fill="#2FCB89"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4547" x1="0.0063367" y1="0.168432" x2="120.853" y2="119.009"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#2FCB89" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#2FCB89" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#2FCB89" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#54E8A9"></stop>
+                  <stop offset="1" stop-color="#1A3E31" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="text-container">
+            <h5 class="card-title">Zero-cost Possibilities</h5>
+            <p class="card-description">Hubble lets users borrow USDH for a one-time 0.5% fee. No variable rates. No
+              interest charged, ever.</p>
+          </div>
+        </div>
+        <div class="container-card bg-yellow-box wow fadeInUp" data-wow-delay="0.5s">
+          <div class="svg-container">
+            <svg width="60" height="60" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4557)"
+                fill-opacity="0.15" stroke="url(#paint1_radial_1366_4557)" stroke-width="2"></rect>
+              <path
+                d="M74.2105 36C73.373 36 72.5698 35.6839 71.9776 35.1213C71.3853 34.5587 71.0526 33.7956 71.0526 33C71.0526 32.2044 71.3853 31.4413 71.9776 30.8787C72.5698 30.3161 73.373 30 74.2105 30H86.8421C87.6796 30 88.4829 30.3161 89.0751 30.8787C89.6673 31.4413 90 32.2044 90 33V45C90 45.7956 89.6673 46.5587 89.0751 47.1213C88.4829 47.6839 87.6796 48 86.8421 48C86.0046 48 85.2014 47.6839 84.6091 47.1213C84.0169 46.5587 83.6842 45.7956 83.6842 45V40.242L65.3905 57.621C64.7983 58.1834 63.9953 58.4994 63.1579 58.4994C62.3205 58.4994 61.5175 58.1834 60.9253 57.621L52.1053 49.242L35.3905 65.121C34.7949 65.6675 33.9972 65.9699 33.1693 65.963C32.3413 65.9562 31.5492 65.6407 30.9637 65.0845C30.3782 64.5282 30.0461 63.7758 30.0389 62.9892C30.0317 62.2026 30.35 61.4448 30.9253 60.879L49.8726 42.879C50.4648 42.3166 51.2679 42.0006 52.1053 42.0006C52.9426 42.0006 53.7457 42.3166 54.3379 42.879L63.1579 51.258L79.219 36H74.2105ZM36.3158 78V87C36.3158 87.7957 35.9831 88.5587 35.3909 89.1213C34.7986 89.6839 33.9954 90 33.1579 90C32.3204 90 31.5171 89.6839 30.9249 89.1213C30.3327 88.5587 30 87.7957 30 87V78C30 77.2043 30.3327 76.4413 30.9249 75.8787C31.5171 75.3161 32.3204 75 33.1579 75C33.9954 75 34.7986 75.3161 35.3909 75.8787C35.9831 76.4413 36.3158 77.2043 36.3158 78ZM52.1053 66C52.1053 65.2043 51.7726 64.4413 51.1803 63.8787C50.5881 63.3161 49.7849 63 48.9474 63C48.1098 63 47.3066 63.3161 46.7144 63.8787C46.1222 64.4413 45.7895 65.2043 45.7895 66V87C45.7895 87.7957 46.1222 88.5587 46.7144 89.1213C47.3066 89.6839 48.1098 90 48.9474 90C49.7849 90 50.5881 89.6839 51.1803 89.1213C51.7726 88.5587 52.1053 87.7957 52.1053 87V66ZM64.7368 69C65.5744 69 66.3776 69.3161 66.9698 69.8787C67.562 70.4413 67.8947 71.2043 67.8947 72V87C67.8947 87.7957 67.562 88.5587 66.9698 89.1213C66.3776 89.6839 65.5744 90 64.7368 90C63.8993 90 63.0961 89.6839 62.5039 89.1213C61.9117 88.5587 61.5789 87.7957 61.5789 87V72C61.5789 71.2043 61.9117 70.4413 62.5039 69.8787C63.0961 69.3161 63.8993 69 64.7368 69ZM83.6842 57C83.6842 56.2044 83.3515 55.4413 82.7593 54.8787C82.1671 54.3161 81.3638 54 80.5263 54C79.6888 54 78.8856 54.3161 78.2933 54.8787C77.7011 55.4413 77.3684 56.2044 77.3684 57V87C77.3684 87.7957 77.7011 88.5587 78.2933 89.1213C78.8856 89.6839 79.6888 90 80.5263 90C81.3638 90 82.1671 89.6839 82.7593 89.1213C83.3515 88.5587 83.6842 87.7957 83.6842 87V57Z"
+                fill="#FFEE24"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4557" x1="-0.0208152" y1="-0.102528" x2="119.899" y2="119.817"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFE34B" stop-opacity="0.7"></stop>
+                  <stop offset="0.510417" stop-color="#FFE34B" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#FFE34B" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4557" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#FFEE24"></stop>
+                  <stop offset="1" stop-color="#302A1A" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="text-container">
+            <h5 class="card-title">Get Yield on Deposits</h5>
+            <p class="card-description">While your collateral is deposited, delegate it to earn the highest yield
+              available in the Solana ecosystem.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-2">
+       <!-- <img src="images/resource/and2-removebg-preview.png" alt="" class="img-fluid  wow fadeInUp" 
+          data-wow-delay="0.5s"> -->
+      </div>
+      <div class="col-md-5">
+        <h2 class="wow fadeInUp" data-wow-delay="0.5s">DEV OPS</h2>
+        <p class="wow fadeInUp" data-wow-delay="0.5s">At Techbiz Limited, we specialize in delivering cutting-edge
+          digital services tailored
+          to your unique needs. Our expert team is dedicated to enhancing your online presence, driving organic
+          traffic, and boosting conversions.</p>
+        <div class="container-card bg-blue-box wow fadeInRight" data-wow-delay="0.5s">
+          <div class="svg-container">
+            <svg width="60" height="60" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4582)"
+                fill-opacity="0.15" stroke="url(#paint1_radial_1366_4582)" stroke-width="2"></rect>
+              <path
+                d="M90.9405 64.775L88.0155 69.55L85.1155 64.775H80.0655L85.5155 72.85L79.5905 82H84.4905L88.0155 76.175L91.5155 82H96.4405L90.4905 72.85L95.9405 64.775H90.9405Z"
+                fill="#87A1FF"></path>
+              <path
+                d="M44.9833 35.52L27.3433 43.92V52.53L35.1833 49.17V82H44.9833V35.52ZM71.37 35.52L53.73 43.92V52.53L61.57 49.17V82H71.37V35.52Z"
+                fill="#87A1FF"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4582" x1="120.194" y1="119.827" x2="-13.1225" y2="17.1841"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#61A0FF" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4582" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#87A1FF"></stop>
+                  <stop offset="1" stop-color="#16161D" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="text-container">
+            <h5 class="card-title">Get up to 11x Leverage</h5>
+            <p class="card-description">Hubble’s capital-efficient 110% collateral ratio lets users leverage up to 11x
+              on their deposits.</p>
+
+          </div>
+
+        </div>
+        <div class="container-card bg-yellow-box wow fadeInUp" data-wow-delay="0.5s">
+          <div class="svg-container">
+            <svg width="60" height="60" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4557)"
+                fill-opacity="0.15" stroke="url(#paint1_radial_1366_4557)" stroke-width="2"></rect>
+              <path
+                d="M74.2105 36C73.373 36 72.5698 35.6839 71.9776 35.1213C71.3853 34.5587 71.0526 33.7956 71.0526 33C71.0526 32.2044 71.3853 31.4413 71.9776 30.8787C72.5698 30.3161 73.373 30 74.2105 30H86.8421C87.6796 30 88.4829 30.3161 89.0751 30.8787C89.6673 31.4413 90 32.2044 90 33V45C90 45.7956 89.6673 46.5587 89.0751 47.1213C88.4829 47.6839 87.6796 48 86.8421 48C86.0046 48 85.2014 47.6839 84.6091 47.1213C84.0169 46.5587 83.6842 45.7956 83.6842 45V40.242L65.3905 57.621C64.7983 58.1834 63.9953 58.4994 63.1579 58.4994C62.3205 58.4994 61.5175 58.1834 60.9253 57.621L52.1053 49.242L35.3905 65.121C34.7949 65.6675 33.9972 65.9699 33.1693 65.963C32.3413 65.9562 31.5492 65.6407 30.9637 65.0845C30.3782 64.5282 30.0461 63.7758 30.0389 62.9892C30.0317 62.2026 30.35 61.4448 30.9253 60.879L49.8726 42.879C50.4648 42.3166 51.2679 42.0006 52.1053 42.0006C52.9426 42.0006 53.7457 42.3166 54.3379 42.879L63.1579 51.258L79.219 36H74.2105ZM36.3158 78V87C36.3158 87.7957 35.9831 88.5587 35.3909 89.1213C34.7986 89.6839 33.9954 90 33.1579 90C32.3204 90 31.5171 89.6839 30.9249 89.1213C30.3327 88.5587 30 87.7957 30 87V78C30 77.2043 30.3327 76.4413 30.9249 75.8787C31.5171 75.3161 32.3204 75 33.1579 75C33.9954 75 34.7986 75.3161 35.3909 75.8787C35.9831 76.4413 36.3158 77.2043 36.3158 78ZM52.1053 66C52.1053 65.2043 51.7726 64.4413 51.1803 63.8787C50.5881 63.3161 49.7849 63 48.9474 63C48.1098 63 47.3066 63.3161 46.7144 63.8787C46.1222 64.4413 45.7895 65.2043 45.7895 66V87C45.7895 87.7957 46.1222 88.5587 46.7144 89.1213C47.3066 89.6839 48.1098 90 48.9474 90C49.7849 90 50.5881 89.6839 51.1803 89.1213C51.7726 88.5587 52.1053 87.7957 52.1053 87V66ZM64.7368 69C65.5744 69 66.3776 69.3161 66.9698 69.8787C67.562 70.4413 67.8947 71.2043 67.8947 72V87C67.8947 87.7957 67.562 88.5587 66.9698 89.1213C66.3776 89.6839 65.5744 90 64.7368 90C63.8993 90 63.0961 89.6839 62.5039 89.1213C61.9117 88.5587 61.5789 87.7957 61.5789 87V72C61.5789 71.2043 61.9117 70.4413 62.5039 69.8787C63.0961 69.3161 63.8993 69 64.7368 69ZM83.6842 57C83.6842 56.2044 83.3515 55.4413 82.7593 54.8787C82.1671 54.3161 81.3638 54 80.5263 54C79.6888 54 78.8856 54.3161 78.2933 54.8787C77.7011 55.4413 77.3684 56.2044 77.3684 57V87C77.3684 87.7957 77.7011 88.5587 78.2933 89.1213C78.8856 89.6839 79.6888 90 80.5263 90C81.3638 90 82.1671 89.6839 82.7593 89.1213C83.3515 88.5587 83.6842 87.7957 83.6842 87V57Z"
+                fill="#FFEE24"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4557" x1="-0.0208152" y1="-0.102528" x2="119.899" y2="119.817"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFE34B" stop-opacity="0.7"></stop>
+                  <stop offset="0.510417" stop-color="#FFE34B" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#FFE34B" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4557" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#FFEE24"></stop>
+                  <stop offset="1" stop-color="#302A1A" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="text-container">
+            <h5 class="card-title">Get Yield on Deposits</h5>
+            <p class="card-description">While your collateral is deposited, delegate it to earn the highest yield
+              available in the Solana ecosystem.</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1696329907">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+  </div>
+  </div>
+
+
+
+
+
+
+  <!-- GET IN TOUCH BANNER 
+  <div class="contact-banner-video-wrapper">
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="https://vitalrecordscontrol.com/wp-content/uploads/2021/09/Hero-Small-Green.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="contact-banner-vid">
+      <h2>Get In Touch With Techbiz</h2>
+      <p>Interested in the services we provide? Don’t hesitate to reach out so we can learn more about your business.
+      </p>
+      <a href="">GET IN TOUCH</a>
+
+    </div>
+
+  </div>
+  <div class="rubix-container">
+    <img src="images/rubixx.png" alt="" class="rubix">
+
+  </div>
+-->
+
+  <div class="conttt">
+
+  </div>
+  <!-------------- OUR PRODUCTS ----------->
+  <div class="products-main panel" >
+
+    <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
+      <h1 class="wow fadeInUp" style="margin: 0;">OUR DIGITAL PRODUCTS</h1>
+      <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #fff; width: 100px;">
+    </div>
+    <div class="section-title section-title2" style="margin-top: 0px;">
+      <h3>Effective Digital
+        SEO Marketing Solutions</h3>
+      <p class="wow fadeInUp" data-wow-delay="0.5s">At Techbiz Limited, we specialize in delivering cutting-edge digital
+        services tailored
+        to your unique needs. Our expert team is dedicated to enhancing your online presence, driving organic
+        traffic, and boosting conversions.</p>
+    </div>
+    <div class="gallery">
+
+
+      <div class="left green ">
+        <div class="detailsWrapper">
+          <div class="details d1">
+
+            <div class="section-titlee wow fadeInLeft">
+              <div style="text-align: center;">
+                <h1 style="font-size: 23px; display: inline-block; vertical-align: middle; line-height: 1;">47 <span
+                    style="vertical-align: middle;">PAY DAY</span></h1>
+              </div>
+            </div>
+            <div class="text wow wow fadeInUp">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi magni nisi sunt excepturi.
+                Laudantium
+                beatae incidunt asperiores et? Voluptatibus doloribus dolores blanditiis laboriosam minus iusto aperiam
+                quia, consequatur officiis?</p>
+            </div>
+            <div class="row wow fadeInUp">
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/time.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Available Anytime</h2>
+                  <p>Access your cloud payroll 24/7 whenever and wherever you want.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/multi-branch.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Multi Branch Capable</h2>
+                  <p>Easy to scale with multi-branch features & centrally manage your workforce.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row wow fadeInUp" style="margin-top: 20px;">
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/productivity.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Increase HR Productivity</h2>
+                  <p>Our payroll platform automates key processes to help increase HR productivity</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/precise.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Precise</h2>
+                  <p>Our payroll platform will vastly reduce the possibility of human error, including inaccurate data
+                    input.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="details d2">
+            <div class="headline ">
+              <div class="section-titlee wow fadeInLeft">
+                <div style="text-align: center;">
+                  <h1 style="font-size: 23px; display: inline-block; vertical-align: middle; line-height: 1;">47 <span
+                      style="vertical-align: middle;">CRM ALERT</span></h1>
+                </div>
+
+              </div>
+            </div>
+            <div class="text wow fadeInUp">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi magni nisi sunt excepturi.
+                Laudantium
+                beatae incidunt asperiores et? Voluptatibus doloribus dolores blanditiis laboriosam minus iusto aperiam
+                quia, consequatur officiis?</p>
+            </div>
+            <div class="row wow fadeInUp">
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/multi-branch.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Multi Branch Capable</h2>
+                  <p>Easy to scale with multi-branch features & centrally manage your workforce.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/productivity.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Increase HR Productivity</h2>
+                  <p>Our payroll platform automates key processes to help increase HR productivity</p>
+                </div>
+              </div>
+            </div>
+            <div class="row wow fadeInUp" style="margin-top: 20px;">
+
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/precise.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Precise</h2>
+                  <p>Our payroll platform will vastly reduce the possibility of human error, including inaccurate data
+                    input.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="details d3">
+            <div class="headline ">
+              <div class="section-titlee wow fadeInLeft">
+                <div class="section-titlee wow fadeInLeft">
+                  <div style="text-align: center;">
+                    <h1 style="font-size: 23px; display: inline-block; vertical-align: middle; line-height: 1;">47 <span
+                        style="vertical-align: middle;">PRO</span></h1>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="text wow fadeInUp">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi magni nisi sunt excepturi.
+                Laudantium
+                beatae incidunt asperiores et? Voluptatibus doloribus dolores blanditiis laboriosam minus iusto aperiam
+                quia, consequatur officiis?</p>
+            </div>
+            <div class="row wow fadeInUp">
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/precise.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Precise</h2>
+                  <p>Our payroll platform will vastly reduce the possibility of human error, including inaccurate data
+                    input.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-image">
+                  <img src="images/PRODUCTS/multi-branch.png" alt="">
+                </div>
+                <div class="product-text">
+                  <h2>Multi Branch Capable</h2>
+                  <p>Easy to scale with multi-branch features & centrally manage your workforce.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row wow fadeInUp" style="margin-top: 20px;">
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="right green">
+        <div class="photos">
+          <div class="photos-box">
+            <div class="photo red">
+             <!-- <img src="https://deveb.co/static/media/vim.2c5e9ce4.jpg" />  -->
+             <img src="images/PRODUCTS/47.svg" alt="" srcset="">
+            </div>
+            <div class="photo green">
+              <img src="https://deveb.co/static/media/newdopegood.6e57b4b4.jpg" />
+            </div>
+            <div class="photo blue">
+              <img src="https://deveb.co/static/media/am-arc.0bba8786.jpg" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- ENTERPRISE SOLUTION AND OUR TECHNOLOGIES-->
+  <div class="technologies">
+    <div class="custom-shape-divider-top-1696329805">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+  </div>
+
+    <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
+      <h1 class="wow fadeInUp" style="margin: 0;">OUR TECHNOLOGIES AND DATA</h1>
+      <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #000; width: 100px;">
+    </div>
+    <div class="section-title section-title2" style="margin-top: 0px;">
+      <h3>Effective Digital
+        SEO Marketing Solutions</h3>
+     
+    </div>
+
+    <section id="testimonial">
+      <div class="testimonial-container">
+        <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
+          <h1 class="wow fadeInUp" style="margin: 0;color: #fff; letter-spacing: 1.2px; font-size: 20px; font-weight: 500; margin-bottom: 10px;">SEE WHAT THEY SAY </h1>
+        
+        </div>
+        <div class="quoteLoop">
+         
+          <blockquote class="quote">
+           <p class="actual-quote">We had the pleasure of working with Techbiz Limited on implementing our software solutions and it was a game changer for our manufacturing companies. They showed exceptional professionalism and dedication.</p>
+           <cite style="margin-left: 0;">- Ahmed Bajaber - <span class="testimonial-title">Director Kitui Floor Mills & Vipingo Industries</span></cite>
+          
+        </blockquote>
+
+        <blockquote class="quote">
+          <p class="actual-quote">Techbiz took time to understand our unique logistics challenges and tailored their solution to fit seamlessly into our workflow.</p>
+          <cite>- Mustafa - <span class="testimonial-title">Head of ICT, Nairobi Freight Terminal</span></cite>
+        
+      </blockquote>
+      <blockquote class="quote">
+        <p class="actual-quote">We are grateful to find a software partner that truly cares about our success. We highly recommend Techbiz Limited to any organization seeking reliable software solutions.</p>
+        <cite style="margin-left: 0;">- Mustafa Ramadhan - <span class="testimonial-title">Vice President KNCCI</span></cite>
+      
+    </blockquote>
+    
+        <blockquote class="quote">
+          <p class="actual-quote">Thanks to digital transformation and automation, Mombasa County Government has significantly improved service delivery to citizens and achieved a 50%+ growth in revenue. The digitization process was conducted professionally, successfully and promptly. We wholeheartedly recommend this approach to all other county governments.</p>
+          <cite style="margin-left: 0;">- Ms. Asha Abdi - <span class="testimonial-title">Chief Office Finance Mombasa County</span></cite>
+         
+      </blockquote>
+
+      <blockquote class="quote">
+        <p class="actual-quote">We have experienced improved efficiency in our ICT infrastructure enhancing smooth running of our daily operations. We highly recommend Techbiz to anyone seeking top-notch ICT services and support.</p>
+        <cite style="margin-left: 0;">- Yobesh Oyaro - <span class="testimonial-title">Head of Procurement - KPA</span></cite>
+      
+    </blockquote>
+  
+      <blockquote class="quote">
+        <p class="actual-quote">Our longstanding relationship with Techbiz dates back to our humble beginnings. We have witnessed Techbiz’s exceptional commitment to delivering the highest level of customer service. We recommend Techbiz to the world for their unwavering excellence.</p>
+        <cite style="margin-left: 0;">- Abdulrahim Parpia - <span class="testimonial-title">CEO Multitools</span></cite>
+     
+    </blockquote>
+          <!-- ... Other blockquotes ... -->
+      </div>
+      
+      </div>
+    </section>
+
+
+    <div id="no01" class="wrapper" style="margin-top: -40px;">
+      <div class="boxes">
+        <img src="images/TECH-STACKS/1.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/2.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/3.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/4.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/5.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/6.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/7.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/8.webp" alt="" srcset="" class="box">
+       
+      </div>
+    </div>
+    <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
+      <h1 class="wow fadeInUp" style="margin: 0;color: #fff; letter-spacing: 1.2px; font-size: 20px; font-weight: 500; margin-bottom: 10px;">SEE WHAT WE DO </h1>
+    
+    </div>
+
+    <div id="no03" class="wrapper" style="margin-top: -50px; margin-bottom: 50px;">
+      <div class="boxes">
+        <img src="images/TECH-STACKS/1.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/7.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/3.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/8.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/2.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/6.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/4.webp" alt="" srcset="" class="box">
+        <img src="images/TECH-STACKS/5.webp" alt="" srcset="" class="box">
+     
+      
+   
+      
+      </div>
+    </div>
+  
+
+
+   <div class="row">
+    <div class="col-md-6">
+    
+    </div>
+    <div class="col-md-6">
+     
+
+      </div>
+
+    
+       
+    </div>
+
+
+
+    <div class="custom-shape-divider-bottom-1696329907">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+  </div>
+   </div>
+
+   
+ 
+
+  <!-- Contact Start -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+
+      <div class="contact-wrapper row">
+        <div class="col-md-6">
+          <h1>Get In Touch</h1>
+          <p>Do not hesitate to reach out. Just fill in the contact form here and we’ll be sure to reply as fast as
+            possible.</p>
+          <h2>VISIT OUR OFFICES</h2>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:support@website.com" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <span>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5>MOMBASA</h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <p>Tea Trade Centre,Ground Floor, Nyerere Avenue.</p>
+                    </div>
+
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@website.com" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <span>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5>NAIROBI</h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <p>Laxton House, 4th Floor, Limuru Road</p>
+                    </div>
+
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <h2>MESSAGE US</h2>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:support@website.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5>EMAIL</h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <p> info@techbizafrica.com</p>
+                    </div>
+
+                  </div>
+                </span>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="tel:+0011234567890" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5>PHONE</h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <p> +254 711 377 232</p>
+                    </div>
+
+                  </div>
+                </span>
+
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form action="" class="contact-form">
+
+            <div class="wrapper-flex">
+
+              <div class="input-wrapper">
+                <label for="name">First Name*</label>
+
+                <input type="text" name="name" id="name" required placeholder="First Name"
+                  class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="last-name">Last Name*</label>
+
+                <input type="text" name="last-name" id="last-name" required placeholder="Last Name"
+                  class="input-field">
+              </div>
+
+            </div>
+            <div class="input-wrapper">
+              <label for="emai">Email*</label>
+
+              <input type="text" name="email" id="email" required placeholder="Enter Your Email" class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="emai">Subject*</label>
+
+              <input type="text" name="suject" id="email" required placeholder="Subject" class="input-field">
+            </div>
+            <label for="message">Message*</label>
+
+            <textarea name="message" id="message" required placeholder="Type Your Message"
+              class="input-field"></textarea>
+
+            <button type="submit" class="btn  contact-button">
+              <span>Send Message</span>
+
+              <!-- <ion-icon name="paper-plane-outline"></ion-icon>   -->
+            </button>
+
+          </form>
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Contact End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container container1 py-5">
+      <div class="row" style="display: flex; justify-content: space-between; padding-top: 50px;">
+        <div class="col-lg-3 col-md-6">
+          <img src="images/logo.png" alt="" style="height: 130px; width: 210px; margin-top: -40px; margin-left: -40px;">
+          <p style="font-size: 14px; font-family: 'Nunito Sans', sans-serif; margin-top: -20px;">Techbiz Ltd is a
+            Leading ICT Systems
+            Integrator
+            Company in East Africa with Corporate Headquarters
+            in Nairobi, Kenya. We are an ISO 9001-2008 certified company.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Address</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mombasa, Kenya</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 707 883087</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 quick">
+          <h4 class="text-light mb-4">Quick Links</h4>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container  container2">
+      <div class="copyright ">
+        <div class="row" style="margin-top: 20px; padding-bottom: 20px; margin-left: 0;">
+          <div class="" style="text-align: center; padding: 10px;">
+            <a href="#">All Right Reserved @ 2023 Techbiz Limited.</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer End -->
+
+
+
+  <!-- LOTTIE -->
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web/build/player/lottie.min.js"></script>
+
+
+  <!-- wow animation-->
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+
+  <!-- ABOUT US GSAP-->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
+  <script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
+
+  <script>
+    //learn how this was made at https://www.youtube.com/watch?v=ersN5fk8py0 
+    gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin, GSDevTools);
+
+    gsap.defaults({ ease: "none" });
+
+    const pulses = gsap.timeline({
+      defaults: {
+        scale: 1.5,
+        autoAlpha: 1,
+        transformOrigin: 'center',
+        ease: "elastic(2.5, 1)"
+      }
+    })
+      .to(".ball02, .text01", {}, 0.84)
+      .to(".ball03, .text02", {}, 1.36)
+      .to(".ball04, .text03", {}, 1.92)
+      .to(".ball05, .text04", {}, 2.52)
+      .to(".ball06, .text05", {}, 3.16)
+    const main = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#svg",
+        scrub: true,
+        start: "top center",
+        end: "bottom center"
+      }
+    })
+      .to(".ball01", { autoAlpha: 1, duration: 0.05 })
+      .from(".theLine", { drawSVG: 0, duration: 4 }, 0)
+      .to(".ball01", {
+        motionPath: {
+          path: ".theLine",
+          align: ".theLine",
+          alignOrigin: [0.5, 0.5],
+        }, duration: 4
+      }, 0)
+      .add(pulses, 0)
+
+
+    //GSDevTools.create({animation:main})
+
+
+    /*const pulses = gsap.timeline({
+      defaults: {
+        duration: 0.05, 
+        autoAlpha: 1, 
+        scale: 2, 
+        transformOrigin: 'center', 
+        ease: "elastic(2.5, 1)"
+      }})
+    .to(".ball02, .text01", {}, 0.2) 
+    .to(".ball03, .text02", {}, 0.33)
+    .to(".ball04, .text03", {}, 0.46)
+    
+    const main = gsap.timeline({defaults: {duration: 1},
+      scrollTrigger: {
+        trigger: "#svg",
+        scrub: true,
+        start: "top center",
+        end: "bottom center"
+      }})
+    .to(".ball01", {duration: 0.01, autoAlpha: 1})
+    .from(".theLine", {drawSVG: 0}, 0)
+    .to(".ball01", {motionPath: {
+      path: ".theLine", 
+      align:".theLine",
+      alignOrigin: [0.5, 0.5],
+    }}, 0)
+    .add(pulses, 0);
+     */
+  </script>
+
+
+  <!-- PRODUCTS GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script>
+    window.onload = () => {
+      console.log('Gsap works')
+
+      let details = gsap.utils.toArray('.details')
+      let props = gsap.getProperty('#id', 'backgroundColor')
+
+      gsap.registerPlugin(ScrollTrigger)
+
+      gsap.set('.photo:not(:first-child)', {
+        opacity: 1,
+        scale: 1,
+        // y: '100%',
+        clipPath: 'inset(100% 0% 0%)',
+        scale: 1,
+      })
+
+      gsap.set('.photo img', {
+        y: 5,
+      })
+
+      const animation = gsap.to('.photo:not(:first-child)', {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        stagger: 1,
+        // y: '0%',
+        clipPath: 'inset(0% 0% 0%)',
+        scale: 1,
+        snap: true,
+      })
+
+      gsap.to('.photo img', {
+        y: -5,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+        ease: 'power1.inOut',
+      })
+
+      ScrollTrigger.create({
+        trigger: '.gallery',
+        start: 'top top',
+        end: 'bottom bottom',
+        pin: '.right',
+        animation: animation,
+        scrub: 2,
+        // markers: true,
+      })
+
+      gsap.to('.gallery', {
+        duration: 1,
+        backgroundColor: '#fff',
+        //  backgroundColor: '#E8B620',
+        scrollTrigger: {
+          trigger: '.d1',
+          scrub: true,
+        },
+      })
+
+      gsap.to('.gallery', {
+        duration: 1,
+        backgroundColor: '#fff',
+        // backgroundColor: '#0DB4D7',
+        scrollTrigger: {
+          trigger: '.d2',
+          scrub: true,
+        },
+      })
+
+      gsap.to('.gallery', {
+        duration: 1,
+        backgroundColor: '#fff',
+
+        scrollTrigger: {
+          trigger: '.d3',
+          scrub: true,
+        },
+      })
+
+    /*  gsap.to('.gallery', {
+        duration: 1,
+        backgroundColor: '#fff',
+
+        scrollTrigger: {
+          trigger: '.d4',
+          scrub: true,
+        },
+      })
+
+      */
+
+    }
+  </script>
+
+
+  <!-- RUBIX GSAP-->
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+
+  <script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the .rubix element
+      const rubixElement = document.querySelector('.rubix');
+
+      // Create a GSAP timeline
+      const tl = gsap.timeline({ paused: true, reversed: true });
+
+      // Define the animation
+      tl.to('.rubix', {
+        y: -100, // Move the element 50 pixels upward
+        duration: 0.6, // Animation duration in seconds
+        ease: 'power2.inOut' // Easing function for smooth animation
+      });
+
+      let lastScroll = 0;
+
+      // Update the animation when scrolling
+      window.addEventListener('scroll', function () {
+        // Get the current scroll position
+        const currentScroll = window.scrollY;
+
+        // Check if scrolling down
+        if (currentScroll > lastScroll) {
+          // Play the animation immediately
+          tl.play();
+        } else {
+          // Reverse the animation when scrolling up
+          tl.reverse();
+        }
+
+        // Update the last scroll position
+        lastScroll = currentScroll;
+      });
+    });
+  </script>
+
+  <!-- <script>
+
+   document.addEventListener("DOMContentLoaded", function() {
+  // Get the .rubix element
+  const rubixElement = document.querySelector('.rubix');
+
+  // Update the animation when scrolling
+  window.addEventListener('scroll', function() {
+    // Get the current scroll position
+    const totalScroll = window.scrollY;
+
+    // Calculate the target position based on the total scroll
+    const targetPosition = -100 * Math.floor(totalScroll / 100);
+
+    // Apply the target position as inline style to move the element
+    rubixElement.style.transform = `translateY(${targetPosition}px)`;
+  });
+});
+
+  </script>
+
+-->
+
+   <!-- TESTIMONIALS SCRIPT -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+   <script>
+     function fade($ele) {
+ $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
+     var $next = $(this).next('.quote');
+     fade($next.length > 0 ? $next : $(this).parent().children().first());
+});
+}
+fade($('.quoteLoop > .quote').first());
+   </script>
+
+    <!-- TECH STACKS GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+  <script>
+    console.clear();
+  
+  gsap.set('.wrapper', { xPercent: -50, yPercent: -50 });
+  gsap.set('#no02', { y: 50 });
+  gsap.set('#no03', { y: 150 });
+
+  var boxWidth = 200,
+    totalWidth = boxWidth * 8,
+    no01 = document.querySelectorAll("#no01 .box"),
+    no03 = document.querySelectorAll("#no03 .box"),
+    dirFromLeft = "+=" + totalWidth,
+    dirFromRight = "-=" + totalWidth;
+
+  var mod = gsap.utils.wrap(0, totalWidth);
+
+  function marqueeLeft(which, time, direction) {
+    gsap.set(which, {
+      x: function (i) {
+        return i * boxWidth;
+      }
+    });
+    var action = gsap.timeline()
+      .to(which, {
+        x: direction,
+        modifiers: {
+          x: x => mod(parseFloat(x)) + "px"
+        },
+        duration: time,
+        ease: 'none',
+        repeat: -1,
+      });
+    return action;
+  }
+
+  function marqueeRight(which, time, direction) {
+    gsap.set(which, {
+      x: function (i) {
+        return i * boxWidth;
+      }
+    });
+    var action = gsap.timeline()
+      .to(which, {
+        x: direction,
+        modifiers: {
+          x: x => mod(parseFloat(x)) + "px"
+        },
+        duration: time,
+        ease: 'none',
+        repeat: -1,
+      });
+    return action;
+  }
+
+  var master = gsap.timeline()
+    .add(marqueeLeft(no01, 15, dirFromLeft), 1)
+    .add(marqueeRight(no03, 20, dirFromRight), 1);
+  </script>
+
+  <!-- Circle Javascript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Nav Link Javascript -->
+  <script src="https://kit.fontawesome.com/deef5bf67e.js" crossorigin="anonymous"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+  <script type="module" src=https://unpkg.com/@splinetool/viewer@0.9.455/build/spline-viewer.js></script>
+
+
+  <!--Logos -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+</html>
